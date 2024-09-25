@@ -1,4 +1,6 @@
-﻿using IndexerDemo.indexer;
+﻿using IndexerDemo._250924;
+using IndexerDemo._250924_1;
+using IndexerDemo.indexer;
 
 namespace IndexerDemo
 {
@@ -101,13 +103,55 @@ namespace IndexerDemo
             //{
             //    Console.WriteLine(st[i,0]);
             //}
-            student s1 = new student();
-            s1["name"] = "rajesh";
-            s1["grade"] = "A";
-            s1["asdfasd"] = "A";
-            Console.WriteLine(s1["name"]);//rajesh
-            Console.WriteLine(s1["grade"]);//A
-            Console.WriteLine(s1["grade123"]);//A
+            //student s1 = new student();
+            //s1["name"] = "rajesh";
+            //s1["grade"] = "A";
+            //s1["asdfasd"] = "A";
+            //Console.WriteLine(s1["name"]);//rajesh
+            //Console.WriteLine(s1["grade"]);//A
+            //Console.WriteLine(s1["grade123"]);//A
+            //--------------------------------------------------------------
+
+
+            //Employee e1 = new Employee();
+            //e1["id"] = "123";//e1.id=123
+            //e1["name"] = "Rajesh";
+            //e1[0] = "pune";
+            //e1[1] = "Nashik";
+
+            //string n = e1["id"];
+            //string nm = e1["name"];
+            //Console.WriteLine(n + " " + nm);
+
+            //Employee e2 = new GTHEmployee();
+            //e2["id"] = "34";
+            //-------------------------------------------------
+
+            int[,] ar = new int[,] { { 1, 2, 3 },{ 4, 5, 6 }, { 7, 8, 9 } };
+
+            Matrix m1 = new Matrix(ar);
+            //m1[0, 0] = 1;//row 1st
+            //m1[0, 1] = 2;//row 1st
+            //m1[0, 2] = 3;//row 1st
+
+            //m1[1, 0] = 11;//row 2nd
+            //m1[1, 1] = 22;//row 2d
+            //m1[1, 2] = 33;//row 2nd
+
+            //m1[2, 0] = 111;//row 2nd
+            //m1[2, 1] = 222;//row 2d
+            //m1[2, 2] = 333;//row 2nd    //set
+
+            Console.WriteLine("Matrix Elements are");
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write(" " + m1[i,j]);//get
+                }
+                Console.WriteLine();
+            }
+
         }
     }
 }
